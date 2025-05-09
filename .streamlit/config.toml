@@ -1,0 +1,14 @@
+[theme]
+# Light theme
+base="light"
+primaryColor="#0A66C2"  # LinkedIn blue
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#f0f2f5"
+textColor="#333333"
+
+# Other theme options
+font="sans serif"
+
+[server]
+enableXsrfProtection = false
+enableCORS = false 
