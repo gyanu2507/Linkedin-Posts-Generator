@@ -2,7 +2,7 @@
 
 A modern AI-powered application that helps you create engaging LinkedIn posts with ease. Built with Python and Streamlit, this tool generates professional content tailored to your needs.
 
-![LinkedIn Post Generator](screenshot.png)
+![LinkedIn Post Generator](resources/Screenshot%202025-05-11%20at%2010.22.23.png)
 
 ## Features ✨
 
@@ -12,6 +12,16 @@ A modern AI-powered application that helps you create engaging LinkedIn posts wi
 - **Modern UI**: Clean and responsive interface with light/dark mode support
 - **Easy to Use**: Simple three-step process to generate your posts
 - **Copy to Clipboard**: Instantly copy generated posts with one click
+
+## Architecture 🏗️
+
+![Architecture Diagram](resources/architecture.jpg)
+
+The application follows a modular architecture with the following components:
+- **Frontend Layer**: Streamlit-based UI for user interaction
+- **Business Logic Layer**: Post generation and few-shot learning implementation
+- **Data Layer**: Topic management and example storage
+- **AI Integration**: Custom few-shot learning model for content generation
 
 ## Installation 🚀
 
@@ -55,6 +65,9 @@ linkedin-post-generator/
 ├── post_generator.py   # Post generation logic
 ├── styles/            # CSS and styling
 │   └── main.css      # Main stylesheet
+├── resources/         # Images and assets
+│   ├── architecture.jpg
+│   └── Screenshot 2025-05-11 at 10.22.23.png
 ├── requirements.txt   # Project dependencies
 └── README.md         # Documentation
 ```
