@@ -40,7 +40,6 @@ def main():
 
     # Create three columns for the dropdowns
     col1, col2, col3 = st.columns(3)
-
     fs = FewShotPosts()
     tags = fs.get_tags()
     
