@@ -70,7 +70,7 @@ def main():
     # Add footer
     st.markdown("---")
     st.markdown("""
-        <div style="text-align: center; color: #666;">
+        <div class="footer">
             Made with ❤️ by Gyanu
         </div>
     """, unsafe_allow_html=True)
