@@ -1,9 +1,10 @@
 from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
-llm = ChatGroq(groq_api_key=os.getenv("GROQ_API_KEY"), model_name="llama-3.3-70b-versatile")
+llm = ChatGroq(groq_api_key=st.secrets["GROQ_API_KEY"], model_name="llama-3.3-70b-versatile")
 
 def test_llm_connection():
     """Test if the LLM connection is working properly"""
