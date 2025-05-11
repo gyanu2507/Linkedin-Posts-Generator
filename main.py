@@ -1,6 +1,7 @@
 import streamlit as st
 from few_shot import FewShotPosts
 from post_generator import generate_post
+import os
 
 # Page configuration
 st.set_page_config(
@@ -9,27 +10,14 @@ st.set_page_config(
     layout="centered"
 )
 
-# Custom CSS
-st.markdown("""
-    <style>
-    .main {
-        padding: 2rem;
-    }
-    .stButton>button {
-        width: 100%;
-        background-color: #0A66C2;
-        color: white;
-        font-weight: bold;
-        padding: 0.5rem;
-        margin-top: 2rem;
-    }
-    .title {
-        text-align: center;
-        color: #0A66C2;
-        margin-bottom: 2rem;
-    }
-    </style>
-""", unsafe_allow_html=True)
+# Load external CSS
+def load_css():
+    css_file = os.path.join("styles", "main.css")
+    with open(css_file) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+# Load CSS
+load_css()
 
 # Options for length and language
 length_options = ["Short", "Medium", "Long"]
@@ -83,7 +71,7 @@ def main():
     st.markdown("---")
     st.markdown("""
         <div style="text-align: center; color: #666;">
-            Made with ❤️ by Codebasics
+            Made with ❤️ by Gyanu
         </div>
     """, unsafe_allow_html=True)
 
