@@ -97,8 +97,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Made with passion for the LinkedIn community 🌟
 # linkedin-post-generator
-# linkedin-post-generator
-# Post_Generator
-# Post_Generator
-# Post_Generator
-# Linkedin-Posts-Generator
+
